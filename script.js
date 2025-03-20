@@ -10,14 +10,15 @@ function getCharacters() {
                 const origin = character.origin.name;
                 const status = character.status;
 
-                //
+                // Crear elemento div para cada personaje y
+                // añadir sus diferentes datos
                 const divCharacter = document.createElement("div");
                 divCharacter.classList.add("character");
                 divCharacter.innerHTML = `
-                <p class="nameCharacter">${name}</p>
+                <span class="nameCharacter">${name}</span>
                 <img class="imgCharacter" src="${img}" alt="Image of ${name}">
-                <p class="originCharacter">${origin}</p>
-                <p class="statusCharacter">${status}</p>`;
+                <span class="originCharacter">${origin}</span>
+                <span class="statusCharacter">${status}</span>`;
                 listCharacters.append(divCharacter);
             });
         })

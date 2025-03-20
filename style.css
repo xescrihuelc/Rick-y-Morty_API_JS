@@ -1,6 +1,24 @@
+#listCharacters {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
 .character {
     display: flex;
     flex-direction: column;
-    padding: -2px;
-    gap: 10px;
+    border: 2px black solid;
+    gap: 5px;
+    margin: 10px;
+    margin-right: 500px;
+}
+
+.nameCharacter, .originCharacter, .statusCharacter {
+    padding-left: 10px;
+}
+
+.imgCharacter {
+    width: 150px;
+    height: 150px;
+    padding-left: 10px;
 }
