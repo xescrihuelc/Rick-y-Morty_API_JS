@@ -14,10 +14,10 @@ function getCharacters() {
                 const divCharacter = document.createElement("div");
                 divCharacter.classList.add("character");
                 divCharacter.innerHTML = `
-                <p class="nameCharacter">${name}<p>
+                <p class="nameCharacter">${name}</p>
                 <img class="imgCharacter" src="${img}" alt="Image of ${name}">
-                <p class="originCharacter">${origin}<p>
-                <p class="statusCharacter">${status}<p>`;
+                <p class="originCharacter">${origin}</p>
+                <p class="statusCharacter">${status}</p>`;
                 listCharacters.append(divCharacter);
             });
         })
